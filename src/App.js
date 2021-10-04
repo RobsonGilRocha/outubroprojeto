@@ -9,6 +9,7 @@ function App() {
     <Catalog/>
     <Contato/>
     <Footer/>
+    <h1>Obs: redux e paginação</h1>
   </>
   );
 }
