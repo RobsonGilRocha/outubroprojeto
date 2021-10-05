@@ -1,15 +1,18 @@
 
-import {Login, Home, Header,Footer,Contato,Catalog } from './components'
+import {Login, Home, Header,Footer,Contato,Catalog, Wallpaper } from './components'
 function App() {
   return (
   <>
     <Header/>
-    <Login/>
-    <Home/>
-    <Catalog/>
-    <Contato/>
-    <Footer/>
-    <h1>Obs: redux e paginação</h1>
+    <Wallpaper>
+      
+      <Login/>
+      <Home/>
+      <Catalog/>
+      <Contato/>
+      <Footer/>
+    </Wallpaper>
+    <h1>Obs: redux,axios,dayjs e paginação(react-router-dom)</h1>
   </>
   );
 }

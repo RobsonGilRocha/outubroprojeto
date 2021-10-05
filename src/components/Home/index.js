@@ -8,6 +8,8 @@ const Squarehome = styled.div`
   height: 100px;
   width: 200px;
   padding: 10px;
+  z-index:-2;
+  position: absolute;
   `
 return (
   <Squarehome>tela de Home é um componente de letra preta e fundo cinza</Squarehome>
