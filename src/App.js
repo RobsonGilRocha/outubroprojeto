@@ -5,15 +5,13 @@ function App() {
   <>
     <Header/>
     <Wallpaper>
-      
       <Login/>
       <Home/>
       <Catalog/>
       <Contato/>
-      <Footer/>
     </Wallpaper>
-    <h1>Obs: redux,axios,dayjs e paginação(react-router-dom)</h1>
-  </>
+    <Footer/>
+    </>
   );
 }
 
