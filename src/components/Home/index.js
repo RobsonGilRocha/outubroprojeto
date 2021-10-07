@@ -50,8 +50,6 @@ function PAGEFALSE (){
 const Squarehome = styled.div`
   background-color: grey;
   color: black;
-  height: 100px;
-  width: 180px;
   padding: 10px;
   border-color:  black;
   border-style: solid;

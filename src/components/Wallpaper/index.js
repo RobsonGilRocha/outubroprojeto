@@ -5,7 +5,7 @@ function Wallpaper({children}) {
 const Squarewallpaper = styled.div`
   background-color: grey;
   color: black;
-  height: 100vh;
+  min-height: 100vh;
   padding: 10px;
   border-color:  black;
   border-style: solid;
