@@ -5,7 +5,7 @@ function Header() {
 const Squareheader = styled.div`
   background-color: white;
   color: black;
-  height: 100px;
+  min-height: 100px;
   width: 100%;
   padding: 10px;
   position: fixed;
@@ -15,7 +15,11 @@ const Squareheader = styled.div`
   border-width: 5px;
   `
 return (
-  <Squareheader>tela de Header é um componente de letra preta e fundo branco</Squareheader>
+  <Squareheader>
+    <h3>
+        Tela de Header é um componente de letra preta e fundo branco.
+    </h3>
+  </Squareheader>
 );
 
 }

@@ -35,6 +35,12 @@ const INITIAL_STATE = {
                   return { ...state, page: "page[0]"};
             case 'PAGE_[1]' :
                   return { ...state, page: "page[1]"};
+            case 'PAGE_[2]' :
+                  return { ...state, page: "page[2]"};     
+            case 'PAGE_[3]' :
+                  return { ...state, page: "page[3]"};    
+            case 'PAGE_[4]' :
+                  return { ...state, page: "page[4]"};
                 default:
                     return state;
         }
