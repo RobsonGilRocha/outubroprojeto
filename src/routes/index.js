@@ -4,8 +4,11 @@ import { Homepage} from '../pages'
 function Routes() {
     return (
         <Switch>
-            <Redirect from={'/'} to={'/pages/1'} exact/>
-            <Route path="/pages/:page+" component={Homepage} exact/>
+            <Redirect from={'/'} to={'/homepage'} exact/> 
+            <Route path="/homepage" component={Homepage} exact/>{/* 
+            <Route path="/login" component={Login} exact/> */}
+            {/* 
+            <Route path="/login" component={Login} exact/> */}
         </Switch>
     )
 }
