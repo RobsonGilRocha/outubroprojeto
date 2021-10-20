@@ -1,14 +1,12 @@
 import {Switch, Route, Redirect } from 'react-router-dom'
-import { Homepage} from '../pages'
+import { Homepage, Auth} from '../pages'
 
 function Routes() {
     return (
         <Switch>
-            <Redirect from={'/'} to={'/homepage'} exact/> 
-            <Route path="/homepage" component={Homepage} exact/>{/* 
-            <Route path="/login" component={Login} exact/> */}
-            {/* 
-            <Route path="/login" component={Login} exact/> */}
+            <Redirect from={'/'} to={'/login'} exact/> 
+            <Route path="/login" component={Auth} exact/>
+            <Route path="/homepage" component={Homepage} exact/>
         </Switch>
     )
 }

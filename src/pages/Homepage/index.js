@@ -1,4 +1,4 @@
-import {Login, Home, Header,Footer,Contato,Catalog, Wallpaper } from '../../components/index'
+import { Home, Header,Footer,Contato,Catalog, Wallpaper } from '../../components/index'
 
 function Homepage() {
 
@@ -8,7 +8,6 @@ function Homepage() {
     <Header/>
       <Wallpaper>
         <Home/>
-        <Login/>
         <Catalog/>
         <Contato/>
       </Wallpaper>
