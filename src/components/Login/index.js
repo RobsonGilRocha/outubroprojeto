@@ -1,5 +1,6 @@
 import {useSelector, useDispatch} from 'react-redux'
 import styled from "styled-components"
+import {Row, Separator, Line} from '../index'
 
 function Login() {
   const data = useSelector( state => state.data);
@@ -41,43 +42,76 @@ function ERRORFALSE (){
 }
 
 const Squarepassword = styled.div`
-  background-color: red;
-  color: blue;
+  background-color: white;
+  color: black;
   min-height: 100px;
   min-width: 200px;
   padding: 10px;
+  margin: 10%;
+  border-color:  black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
   `
+  const Gtext = styled.div`
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  `
+
 return (
-  <Squarepassword>
-    <h3>
-      Tela de login é um componente de letra azul e fudo vermelho
-    </h3>
-    <ul>
-        {data ? <h1>DATA_TRUE</h1>:<h1>DATA_FALSE</h1>}
+  <>
+  <Row>
+    <Squarepassword>
+          <Gtext>
+            Login é um componente de Pagina /login
+            <p/>USER:<input/>
+            <p/>PASS:<input/>
+            <p/><button><Gtext>Botão</Gtext></button>
+          </Gtext> 
+    </Squarepassword>
+    <Separator x="200"/>
+    <Squarepassword>
+          <Gtext>
+            Login é um componente de Pagina /login
+            <p/>USER:<input/>
+            <p/>PASS:<input/>
+            <p/><button><Gtext>Botão</Gtext></button>
+          </Gtext> 
+    </Squarepassword>
+  </Row>
+  <Line/>
+  
+    <Squarepassword>
+    <p>
+        {data ? <h4>DATA_TRUE</h4>:<h4>DATA_FALSE</h4>}
         <button onClick={DATATRUE}>DATA_TRUE</button>
         <button onClick={DATAFALSE}>DATA_FALSE</button>
-    </ul>
-    <ul>
-        {login ? <h1>LOGIN_TRUE</h1>:<h1>LOGIN_FALSE</h1>}
+    </p>
+    <p>
+        {login ? <h4>LOGIN_TRUE</h4>:<h4>LOGIN_FALSE</h4>}
         <button onClick={LOGINTRUE}>LOGIN_TRUE</button>
         <button onClick={LOGINFALSE}>LOGIN_FALSE</button>
-    </ul>
-    <ul>
-        {load ? <h1>LOAD_TRUE</h1>:<h1>LOAD_FALSE</h1>}
+    </p>
+    <p>
+        {load ? <h4>LOAD_TRUE</h4>:<h4>LOAD_FALSE</h4>}
         <button onClick={LOADTRUE}>LOAD_TRUE</button>
         <button onClick={LOADFALSE}>LOAD_FALSE</button>
-    </ul>
-    <ul>
-        {colorDark ? <h1>COLORDARK_TRUE</h1>:<h1>COLORDARK_FALSE</h1>}
+    </p>
+    <p>
+        {colorDark ? <h4>COLORDARK_TRUE</h4>:<h4>COLORDARK_FALSE</h4>}
         <button onClick={COLORDARKTRUE}>COLORDARK_TRUE</button>
         <button onClick={COLORDARKFALSE}>COLORDARK_FALSE</button>
-    </ul>
-    <ul>
-        {error ? <h1>ERROR_TRUE</h1>:<h1>ERROR_FALSE</h1>}
+    </p>
+    <p>
+        {error ? <h4>ERROR_TRUE</h4>:<h4>ERROR_FALSE</h4>}
         <button onClick={ERRORTRUE}>ERROR_TRUE</button>
         <button onClick={ERRORFALSE}>ERROR_FALSE</button>
-    </ul>
-  </Squarepassword>
+    </p>
+    </Squarepassword>
+  </>
+    
 );
 
 }

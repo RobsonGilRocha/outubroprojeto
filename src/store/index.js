@@ -3,7 +3,7 @@ import { createStore } from 'redux';
 const INITIAL_STATE = {
     data: true,
     load: false,
-    login: false,
+    login: true,
     colorDark: false,
     error: false,
     page: "page[0]",

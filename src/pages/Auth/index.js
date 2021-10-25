@@ -1,4 +1,4 @@
-import {Login, Footer, Wallpaper } from '../../components/index'
+import {Login, Wallpaper } from '../../components/index'
 
 function Auth() {
   return (
@@ -6,7 +6,6 @@ function Auth() {
         <Wallpaper>
           <Login/>
         </Wallpaper>
-        <Footer/>
     </>
   );
 }
